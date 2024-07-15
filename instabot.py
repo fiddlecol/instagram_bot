@@ -1,4 +1,4 @@
-from selenium import webdriver
+mefrom selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -21,8 +21,8 @@ def main():
         print("Page Source Before Login:", browser.page_source)
 
         # Fill in the username and password fields
-        username = "fiddleodera"
-        password = "Fi16dd87le1"
+        username = "username"
+        password = "passsword"
 
         # Locate the username and password fields and fill them in
         username_field = WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.NAME, "username")))
